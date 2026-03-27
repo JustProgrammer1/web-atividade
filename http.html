@@ -1,37 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>HTTP</title>
+    <title>Protocolo HTTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 15px auto;
+        }
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        .box {
+            background: #eaeaea;
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 5px solid #333;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Protocolo HTTP</h1>
+<div class="container">
 
-<p>
-O HTTP (HyperText Transfer Protocol) é o protocolo utilizado para comunicação entre cliente e servidor.
-Quando um cliente faz uma solicitação, o servidor devolve uma resposta normalmente no formato HTML.
-</p>
+    <h1>Protocolo HTTP</h1>
 
-<h2>Funcionamento</h2>
+    <p>
+        O <strong>HTTP (HyperText Transfer Protocol)</strong> é o protocolo responsável pela comunicação 
+        entre navegadores (clientes) e servidores na Web. Ele permite a troca de informações como páginas HTML,
+        imagens e outros recursos.
+    </p>
 
-<p>
-O cliente envia uma requisição (request) ao servidor.
-O servidor processa essa requisição e retorna uma resposta (response).
-</p>
+    <h2>Como o HTTP funciona</h2>
 
-<h2>Request</h2>
-<p>
-A requisição é enviada pelo cliente e pode utilizar métodos como GET ou POST.
-Os dados enviados são organizados pelo atributo name.
-</p>
+    <p>
+        Quando você acessa um site, seu navegador envia uma requisição HTTP ao servidor, que responde com os dados solicitados.
+    </p>
 
-<h2>Response</h2>
-<p>
-A resposta é enviada pelo servidor e normalmente contém uma página HTML.
-</p>
+    <img src="./Imagens/como-funciona-http.jpg" alt="Fluxo HTTP">
 
-<img src="./Imagens/como-funciona-http.jpg" width="600px" alt="Exemplo HTTP">
+    <div class="box">
+        <p><strong>Passos:</strong></p>
+        <ul>
+            <li>Cliente faz requisição</li>
+            <li>Servidor processa</li>
+            <li>Servidor envia resposta</li>
+            <li>Cliente exibe o conteúdo</li>
+        </ul>
+    </div>
+
+    <h2>Exemplo de Requisição HTTP (Request)</h2>
+
+    <pre>
+GET /index.html HTTP/1.1
+Host: www.exemplo.com
+User-Agent: Mozilla/5.0
+Accept: text/html
+    </pre>
+
+    <div class="box">
+        <p><strong>Explicação dos campos:</strong></p>
+        <ul>
+            <li><strong>GET</strong>: método da requisição</li>
+            <li><strong>/index.html</strong>: recurso solicitado</li>
+            <li><strong>HTTP/1.1</strong>: versão do protocolo</li>
+            <li><strong>Host</strong>: servidor de destino</li>
+            <li><strong>User-Agent</strong>: navegador do usuário</li>
+            <li><strong>Accept</strong>: tipo de conteúdo aceito</li>
+        </ul>
+    </div>
+
+    <h2>Exemplo de Resposta HTTP (Response)</h2>
+
+    <pre>
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1024
+
+<html>
+  <body>
+    <h1>Olá Mundo!</h1>
+  </body>
+</html>
+    </pre>
+
+    <div class="box">
+        <p><strong>Explicação dos campos:</strong></p>
+        <ul>
+            <li><strong>200 OK</strong>: status da resposta</li>
+            <li><strong>Content-Type</strong>: tipo do conteúdo</li>
+            <li><strong>Content-Length</strong>: tamanho da resposta</li>
+            <li><strong>Body</strong>: conteúdo retornado</li>
+        </ul>
+    </div>
+
+    <h2>Exemplo prático</h2>
+
+    <p>
+        Ao acessar um site, o navegador envia uma requisição <strong>GET</strong> e recebe um HTML como resposta.
+    </p>
+
+</div>
 
 </body>
 </html>

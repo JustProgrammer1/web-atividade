@@ -1,73 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Currículo</title>
+    <title>Currículo - Gabriel Peixer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+        }
+        img {
+            width: 150px;
+            border-radius: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: blue;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        .destaque {
+            background-color: #eaeaea;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
 
-<h1 id="topo">Currículo</h1>
+<div class="container">
 
-<h2>Nome</h2>
-<p>Gabriel Andrade Peixer</p>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacao">Formação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#horarios">Horários</a>
+    </nav>
 
-<h2>Foto</h2>
-<img src="https://via.placeholder.com/150" alt="Foto">
+    <hr>
 
-<h2>Contato</h2>
-<p>
-Email: <a href="mailto:email@email.com">email@email.com</a><br>
-Telefone: <a href="tel:47999999999">(47) 99999-9999</a>
-</p>
+    <h1>Gabriel Andrade Peixer</h1>
 
-<h2>Descrição</h2>
-<p>Breve descrição profissional.</p>
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil">
 
-<h2>Habilidades</h2>
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-</ul>
+    <p>
+        <b>Email:</b> 
+        <a href="mailto:gabriel.p2007@aluno.ifsc.edu.br">gabriel.p2007@aluno.ifsc.edu.br</a><br>
 
-<h2 id="formacao">Formação</h2>
-<section>
-<p>Curso superior</p>
-</section>
+        <b>Telefone:</b> 
+        <a href="tel:+5547999999999">(47) 99999-9999</a><br>
 
-<h2 id="experiencia">Experiência</h2>
-<article>
-<p><strong>Empresa X</strong> - <em>Desenvolvedor</em></p>
-<p><mark>Atividades realizadas</mark></p>
-</article>
+        <b>LinkedIn:</b> 
+        <a href="https://linkedin.com" target="_blank">Meu LinkedIn</a>
+    </p>
 
-<h2>Horários</h2>
-<table border="1">
-<tr>
-    <th>Matéria</th>
-    <th>Dias</th>
-    <th>Horário</th>
-</tr>
-<tr>
-    <td>HTML</td>
-    <td>Segunda</td>
-    <td>19:00</td>
-</tr>
-</table>
+    <div id="sobre" class="destaque">
+        <h2>Sobre mim</h2>
+        <p>
+            Sou um <strong>entusiasta da área da informática</strong> procurando uma vaga 
+            <em>extraordinária</em> para subir de carreira, podendo resolver problemas de formas 
+            <mark>criativas e variadas</mark>.
+        </p>
 
-<h2>Menu</h2>
-<a href="#formacao">Formação</a> |
-<a href="#experiencia">Experiência</a>
+        <p>
+            Tenho interesse em tecnologias modernas como <span>desenvolvimento web</span> e programação.
+        </p>
+    </div>
 
-<h2>Links</h2>
-<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <div id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>HTML básico</li>
+            <li>Lógica de programação</li>
+            <li>Git e GitHub</li>
+            <li>Resolução de problemas</li>
+        </ul>
+    </div>
 
-<p>
-<b>Negrito</b><br>
-<em>Ênfase</em><br>
-<strong>Importante</strong><br>
-<mark>Destaque</mark><br>
-<sub>Sub</sub> <sup>Sup</sup>
-</p>
+    <section id="formacao">
+        <h2>Formação Acadêmica</h2>
+
+        <article>
+            <p>
+                <strong>Curso:</strong> Análise e Desenvolvimento de Sistemas<br>
+                <strong>Instituição:</strong> IFSC<br>
+                <strong>Status:</strong> Em andamento
+            </p>
+        </article>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+
+        <p>
+            <strong>Sem experiência profissional formal</strong>, porém com dedicação aos estudos e prática.
+        </p>
+
+        <p>
+            Buscando minha <em>primeira oportunidade</em> para aplicar conhecimentos e crescer profissionalmente.
+        </p>
+
+        <p>
+            Disponível para <mark>novos desafios</mark>.
+        </p>
+    </section>
+
+    <div id="horarios">
+        <h2>Grade de Horários</h2>
+
+        <table>
+            <tr>
+                <th>Dia</th>
+                <th>Matéria</th>
+                <th>Horário</th>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>Programação</td>
+                <td>08:00 - 10:00</td>
+            </tr>
+            <tr>
+                <td>Terça</td>
+                <td>Banco de Dados</td>
+                <td>10:00 - 12:00</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>Redes</td>
+                <td>08:00 - 10:00</td>
+            </tr>
+            <tr>
+                <td>Quinta</td>
+                <td>Engenharia de Software</td>
+                <td>10:00 - 12:00</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>Web</td>
+                <td>08:00 - 10:00</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
 
 </body>
 </html>
